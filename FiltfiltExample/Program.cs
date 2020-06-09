@@ -7,8 +7,8 @@ namespace FiltfiltExample
         static void Main(string[] args)
         {
             //-----Test 1-----
-            List<double> bTest1 = new List<double> { 0.5, 0.5 };
-            List<double> aTest1 = new List<double> { 1 };
+            List<double> bTest1 = new List<double> {0.5, 0.5};
+            List<double> aTest1 = new List<double> {1};
             List<double> xTest1 = new List<double> {1, 3, 4, 4, 6, 1, 8, 13, 2, 5, 5000};
 
             List<double> yExpectedTest1 = new List<double> {1, 2.75, 3.75, 4.5, 4.25, 4, 7.5, 9, 5.5, 1253, 5000};
@@ -17,8 +17,8 @@ namespace FiltfiltExample
             //----------------
 
             //-----Test 2-----
-            List<double> bTest2 = new List<double> { 0.0036, 0.0072, 0.0036 };
-            List<double> aTest2 = new List<double> { 1, -1.8227, 0.8372 };
+            List<double> bTest2 = new List<double> {0.0036, 0.0072, 0.0036};
+            List<double> aTest2 = new List<double> {1, -1.8227, 0.8372};
             List<double> xTest2 = new List<double> 
             { 
                 -0.043256, -0.166285, 0.013080, 0.029588, -0.113554, 0.120458, 0.120557, -0.001850, 0.034916, 0.019924, -0.015937, 0.075586, -0.055551, 0.221872, -0.009812, 0.015494, 0.111051, 0.010575, -0.004644, -0.078041, 0.034909, -0.127877, 0.077447, 
@@ -63,8 +63,6 @@ namespace FiltfiltExample
             };
             List<double> yTest2 = FiltfiltSharp.DoFiltfilt(bTest2, aTest2, xTest2);
             //----------------
-
         }
-
     }
 }

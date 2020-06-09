@@ -5,7 +5,7 @@ public class JaggedArray
 {
     public static T CreateJaggedArray<T>(params int[] lengths)
     {
-        return (T)InitializeJaggedArray(typeof(T).GetElementType(), 0, lengths);
+        return (T) InitializeJaggedArray(typeof(T).GetElementType(), 0, lengths);
     }
 
     private static object InitializeJaggedArray(Type type, int index, IReadOnlyList<int> lengths)
@@ -13,7 +13,7 @@ public class JaggedArray
         Array array = Array.CreateInstance(type, lengths[index]);
         Type elementType = type.GetElementType();
 
-        if (elementType == null) 
+        if (elementType == null)
             return array;
 
         for (int i = 0; i < lengths[index]; i++)
